@@ -1,7 +1,8 @@
 public class Main {
-    public static void main(String[] args) {
-            int B = year/4;
-            int C = year/100;
-            int D = year/400;
-        year = B - C + D;
-    }}
+    public static boolean doubleExpression(double a, double b, double c) {
+        double d=a+b;
+        c = c - d;
+        double absoluteValue = Math.abs(c);
+        return  absoluteValue < 0.0001;
+    }
+}
